@@ -71,7 +71,23 @@ body {
   
 }
 
-@media (max-width: 600px) {
+/* Tablets */
+@media (min-width: 441px) and (max-width: 1000px) {
+
+    body {
+        padding: 20px;
+    }
+
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 160px 130px 140px 120px 130px;
+        gap: 10px;
+    }
+
+}
+
+/* Small mobile devices */
+@media (max-width: 440px) {
 
     body {
         padding: 15px;
@@ -79,7 +95,7 @@ body {
 
     .container {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(8, 120px);
+        grid-template-rows: repeat(8, 150px);
 
         grid-template-areas:
             "one"
@@ -90,6 +106,8 @@ body {
             "six"
             "seven"
             "eight";
+
+        gap: 10px;
     }
 
 }
