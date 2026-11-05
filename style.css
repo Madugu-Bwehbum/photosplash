@@ -71,7 +71,7 @@ body {
   
 }
 
-/* Tablets */
+
 @media (min-width: 441px) and (max-width: 1000px) {
 
     body {
@@ -86,7 +86,6 @@ body {
 
 }
 
-/* Small mobile devices */
 @media (max-width: 440px) {
 
     body {
